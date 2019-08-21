@@ -16,7 +16,7 @@ git push -u origin master
 * 提交文件到本地库：git commit -m 'first commit'
 * 将本地库和远程库进行关联：git remote add origin https://github.com/ZhySir/GitNotes.git
 * 拉取远程库文件同步到本地：git pull --rebase origin master
-* 将本地库文件退到远程库：git push -u origin master
+* 将本地库文件推到远程库：git push -u origin master
   
 ### git修改提交者用户名和邮箱  
 ##### 主动配置：  
@@ -59,4 +59,9 @@ fi
 * 将该文件拷贝至指定项目的根目录中
 * 执行指令 sh changGitInfo.sh
 * 提交到远程库 git push --force
+  
+### git项目迁移远程仓库  
+```
+git push --mirror https://github.com/ZhySir/GitNotes.git
+```
   
